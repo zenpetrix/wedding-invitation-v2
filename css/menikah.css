@@ -402,6 +402,7 @@ vertical-align: middle;
 }
 
 .waktu {
+  text-align: center;
   font-size: 25px;
   font-family: 'Cherry Blossom Script', cursive;
   font-weight: 900;
@@ -451,6 +452,7 @@ vertical-align: middle;
 }*/
 
 .waktu-wib {
+  text-align: center;
   font-size:25px;
   font-family: 'Cherry Blossom Script', cursive;
   font-weight: 900;
@@ -460,12 +462,13 @@ vertical-align: middle;
 
 .tempat {
   font-size:25px;
+  text-align: center;
   font-family: 'Cherry Blossom Script', cursive;
   font-weight: 900;
   color: #000;
   background-color: ; /* semi-transparan */
   backdrop-filter: blur(10px); /* efek kaca */
-  webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
   padding: 1rem 2rem; /* atur ruang dalam */
   border-radius: 1rem; /* sudut membulat */
   display: inline-block;
@@ -1016,7 +1019,7 @@ body.preloader-site {
   font-family: 'Lato', sans-serif;
   margin-bottom: 25px;
   backdrop-filter: blur(10px); /* efek kaca */
-  webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* Arti ayat */
@@ -1027,7 +1030,7 @@ body.preloader-site {
   font-style: italic;
   margin-bottom: 15px;
   backdrop-filter: blur(10px); /* efek kaca */
-  webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* Sumber ayat */
@@ -1037,7 +1040,7 @@ body.preloader-site {
   font-weight: 600;
   letter-spacing: 1px;
   backdrop-filter: blur(10px); /* efek kaca */
-  webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 1rem 2rem;
   border-radius: 1rem;
   display: inline-block;
