@@ -38,8 +38,7 @@ html {
 
 
 .hero {
-  background-image: url("../image/bg_flower_ungu.png");
-  background: url("../image/backgroundgeds.png") no-repeat;
+  background: url("../image/2.jpeg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -47,20 +46,42 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+@media (max-width: 768px) {
+  .section {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
+.hero .title .name {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1.1;
+  color: #7A5C2E;
+  letter-spacing: 6px;
+  display: block;
+}
+
+
+.hero .title .and {
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  margin:0;
+  line-height: 1.1;
+  display: block;
+}
 
 .hero .title {
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 700;
-  transform: none;
-  font-size: 5rem;
-  padding-bottom: 5px;
-  color: gray;
+  line-height: 1.2;
 }
+
 
 .hero .subtitle {
   padding: 35px;
-  color: gray;
+  color: #8B4513;
   font-size: 1.3rem;
 }
 
@@ -132,7 +153,7 @@ html {
 
 .main-content .section-dark {
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_gedi.png") no-repeat;
+  background: url("../image/1.jpeg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
@@ -328,8 +349,8 @@ html {
 }
 
 .nama-lengkap {
-  font-family: 'Playfair Display', sans-serif;
-  color: #6A4C93;
+  font-family: 'Cherry Blossom Script', cursive;
+  color: #333;
   font-size: 3.2rem;
   letter-spacing: 0px;
   padding-bottom: 6px;
@@ -338,13 +359,25 @@ html {
 
 .ampersand {
 font-size: 5rem;
-font-family: 'Rouge Script', sans-serif;
-color: #6A4C93;
+font-family: 'Cherry Blossom Script', cursive;
+color: #333;
 line-height: 5rem;
 display: inline-block;
 vertical-align: middle;
 }
 
+.anakdari {
+ text-align: center ;
+ font-family: 'Raleway', sans-serif;
+ letter-spacing: 0px;
+ font-size: large; 
+}
+
+.anakdari1 {
+ text-align: center ;
+ font-family: 'Raleway', sans-serif;
+ letter-spacing: 0px; 
+}
 .bodytext {
   font-size: 18px;
 }
@@ -355,12 +388,46 @@ vertical-align: middle;
 }
 
 .tanggal-angka {
+  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 1rem 2rem; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
   font-size: 5rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   line-height: 1;
+  display: inline-block; /* supaya ukurannya sesuai konten */
 }
 
+.waktu-akad {
+  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 1rem 2rem; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  display: inline-block;
+}
+
+.waktu-resepsi {
+  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 1rem 2rem; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  display: inline-block;
+}
+
+.waktu-wib {
+  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 1rem 2rem; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+}
 .tempat {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
@@ -693,6 +760,12 @@ body.preloader-site {
   padding: 10px 6px;
   margin-top: 20px;
   scrollbar-width: thin;
+  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 1rem 2rem; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  
 }
 
 /* scrollbar chrome */
@@ -776,6 +849,17 @@ body.preloader-site {
   line-height: 1.4;
 }
 
+.button-komen {
+ border: 2px solid #6A4C93;
+  background: white;
+  color: #6A4C93;
+  height: 50px;
+  width: 250px;
+  font-size: 1rem;
+  font: 1em sans-serif;
+  text-transform: uppercase; 
+}
+
 /* ======================
    HITUNG MUNDUR / COUNTDOWN
 ====================== */
@@ -857,7 +941,7 @@ body.preloader-site {
     rgba(255, 255, 255, 0.92)
   ),;
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_geda.png") no-repeat;
+  background: url("../image/2.jpeg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -937,6 +1021,10 @@ body.preloader-site {
     font-size: 0.95rem;
   }
 }
+
+/* ======================
+   Welcome page
+====================== */
 
 
 

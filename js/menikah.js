@@ -35,13 +35,7 @@ $(document).on("click", 'a[href^="#"]', function(event) {
 
 
 // Preloader
-$(document).ready(function($) {
-  $(".preloader-wrapper").fadeOut();
-  $("body").removeClass("preloader-site");
-});
-$(window).on("load", function () {
-  $("body").addClass("preloader-site");
-});
+
 
 //komentar
 // =================== FIREBASE KOMENTAR ===================
