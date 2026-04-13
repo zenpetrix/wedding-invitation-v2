@@ -29,11 +29,11 @@ html {
 }
 
 .navbar-item.is-active{
-  border-bottom: 2px solid #6A4C93;
+  border-bottom: 2px solid #7A5C2E;
 }
 
 .a.navbar-item{
-  font-color: #6A4C93;
+  font-color: #7A5C2E;
 }
 
 
@@ -55,11 +55,15 @@ html {
   }
 }
 
+.imgbunga {
+  width: 125px;
+}
+
 .hero .title .name {
   font-family: 'Playfair Display', serif;
-  font-size: 4rem;
+  font-size: 50px;
   margin: 0;
-  line-height: 1.1;
+  line-height: 0.8;
   color: #7A5C2E;
   letter-spacing: 6px;
   display: block;
@@ -80,9 +84,15 @@ html {
 
 
 .hero .subtitle {
-  padding: 35px;
+  padding: 10px;
   color: #8B4513;
   font-size: 1.3rem;
+  background-color: ; /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 10px 10px; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  display: inline-block;
 }
 
 .hero .tempatwaktu {
@@ -123,15 +133,15 @@ html {
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
-  border-bottom: 2px solid #6A4C93;
+  border-bottom: 2px solid #7A5C2E;
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
-  color: #6A4C93;
+  color: #7A5C2E;
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
-  color: #6A4C93;
+  color: #7A5C2E;
   transition: all .2s ease-in-out;
   border-bottom: 2px solid #c28285;
 }
@@ -161,7 +171,7 @@ html {
 
 .main-content .section-lokasi {
   background-image: url("../image/bg_flower_ungu.png");
-  background: url("../image/background_geda.png") no-repeat;
+  background: url("../image/6.jpeg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
@@ -184,9 +194,9 @@ html {
 }
 
 .main-content .section-dark.resume button {
-  border: 2px solid #6A4C93;
+  border: 2px solid #7A5C2E;
   background: white;
-  color: #6A4C93;
+  color: #7A5C2E;
   height: 50px;
   width: 250px;
   font-size: 1rem;
@@ -194,7 +204,7 @@ html {
 }
 
 .main-content .section-dark.resume .fa-download {
-  color: #6A4C93;
+  color: #7A5C2E;
 }
 
 .main-content .section-dark.my-work {
@@ -237,15 +247,24 @@ html {
 
 .main-content .section-nama {
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_gedi.png") no-repeat;
+  background: url("../image/3.jpeg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
 }
 
+.bride {
+  font-family: 'Cherry Blossom Script', cursive;
+  font-size: 35px;
+  margin-top: 50px;
+  font-weight: bolder;
+  backdrop-filter: blur(10px); /* efek kaca */
+  webkit-backdrop-filter: blur(10px);
+}
+
 .main-content .section-ucapan {
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_gedi.png") no-repeat;
+  background: url("../image/7.jpeg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
@@ -253,7 +272,7 @@ html {
 
 .main-content .section-thanks {
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_geda.png") no-repeat;
+  background: url("../image/1.jpeg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
@@ -324,7 +343,7 @@ html {
 
 .main-content .section-color.pertanyaan {
   padding: 100px;
-  background-color: #6A4C93;
+  background-color: #7A5C2E;
   color: white;
 }
 
@@ -341,11 +360,11 @@ html {
 .main-content .section-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
-  color: #6A4C93;
+  color: #000;
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 
 .nama-lengkap {
@@ -383,8 +402,10 @@ vertical-align: middle;
 }
 
 .waktu {
-  font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-family: 'Cherry Blossom Script', cursive;
+  font-weight: 900;
+  color: #000;
 }
 
 .tanggal-angka {
@@ -400,39 +421,54 @@ vertical-align: middle;
   display: inline-block; /* supaya ukurannya sesuai konten */
 }
 
-.waktu-akad {
-  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
-  backdrop-filter: blur(10px); /* efek kaca */
-  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
-  padding: 1rem 2rem; /* atur ruang dalam */
-  border-radius: 1rem; /* sudut membulat */
-  display: inline-block;
+/* .waktu-akad {
+ /* background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  /*backdrop-filter: blur(10px); /* efek kaca */
+  /*-webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  /*padding: 1rem 2rem; /* atur ruang dalam */
+  /*border-radius: 1rem; /* sudut membulat */
+  /*display: inline-block;
 }
 
-.waktu-resepsi {
-  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
-  backdrop-filter: blur(10px); /* efek kaca */
-  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
-  padding: 1rem 2rem; /* atur ruang dalam */
-  border-radius: 1rem; /* sudut membulat */
-  display: inline-block;
-}
+/*.waktu-resepsi {
+  /*background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  /*backdrop-filter: blur(10px); /* efek kaca */
+  /*-webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  /*padding: 1rem 2rem; /* atur ruang dalam */
+  /*border-radius: 1rem; /* sudut membulat */
+  /*display: inline-block;
+/*}
+
+/*.waktu-wib {
+  /*background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  /*backdrop-filter: blur(10px); /* efek kaca */
+  /*-webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  /*padding: 1rem 2rem; /* atur ruang dalam */
+  /*border-radius: 1rem; /* sudut membulat */
+  /*font-size: 1.4rem;
+  /*font-family: 'Raleway', sans-serif;
+  /*display: inline-block;
+}*/
 
 .waktu-wib {
-  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  font-size:25px;
+  font-family: 'Cherry Blossom Script', cursive;
+  font-weight: 900;
+  color: #000;
+  
+}
+
+.tempat {
+  font-size:25px;
+  font-family: 'Cherry Blossom Script', cursive;
+  font-weight: 900;
+  color: #000;
+  background-color: ; /* semi-transparan */
   backdrop-filter: blur(10px); /* efek kaca */
-  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  webkit-backdrop-filter: blur(10px); /* untuk Safari */
   padding: 1rem 2rem; /* atur ruang dalam */
   border-radius: 1rem; /* sudut membulat */
-  font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
   display: inline-block;
-}
-.tempat {
-  font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
-  font-size: ;
-  margin-bottom: 50px;
 }
 
 
@@ -503,7 +539,7 @@ vertical-align: middle;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #6A4C93;
+  background-color: #7A5C2E;
   color: white;
   cursor: pointer;
   border-radius: 50%;
@@ -525,8 +561,8 @@ vertical-align: middle;
 }
 
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 6px #6A4C93;
-  -webkit-box-shadow: inset 0 0 6px #6A4C93;
+  box-shadow: inset 0 0 6px #7A5C2E;
+  -webkit-box-shadow: inset 0 0 6px #7A5C2E;
   background-color: #8F6BC2;
 }
 
@@ -537,7 +573,7 @@ body.preloader-site {
 .preloader-wrapper {
   height: 100%;
   width: 100%;
-  background: #D8A9A8;
+  background: url('../image/1.jpeg');
   position: fixed;
   top: 0;
   left: 0;
@@ -597,12 +633,12 @@ body.preloader-site {
 }
 
 .btn-cta {
-  background-color: #6A4C93;
+  background-color: #7A5C2E;
   width:  210px;
   height: 65px;
   color: white;
   font-size: 1.2rem;
-  border: 2px solid #6A4C93;
+  border: 2px solid #7A5C2E;
   border-radius: 10px;
   align-items: center;
   margin: 1rem;
@@ -654,7 +690,7 @@ body.preloader-site {
 .dusty-pink-namaer {color: #E6DCF4}
 .dusty-pink-namaest {color: #F3EDF9}
 .dusty-pink-lokasi {color: #8F6BC2}
-.dusty-pink-darkest {color: #6A4C93}
+.dusty-pink-darkest {color: #7A5C2E}
 
 .tile {
   border-radius: 10px;
@@ -740,7 +776,7 @@ body.preloader-site {
 }
 
 .instagram {
-  color: #6A4C93;
+  color: #7A5C2E;
   font-size: 1.25rem;
   font-weight: 900;
   margin-top: 0.5rem;
@@ -760,7 +796,7 @@ body.preloader-site {
   padding: 10px 6px;
   margin-top: 20px;
   scrollbar-width: thin;
-  background-color: rgba(106, 76, 147, 0.6); /* semi-transparan */
+  background-color: ; /* semi-transparan */
   backdrop-filter: blur(10px); /* efek kaca */
   -webkit-backdrop-filter: blur(10px); /* untuk Safari */
   padding: 1rem 2rem; /* atur ruang dalam */
@@ -786,6 +822,10 @@ body.preloader-site {
     0 8px 16px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(106, 76, 147, 0.15);
   position: relative;
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 1rem 2rem; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
 }
 
 .box::before {
@@ -806,7 +846,7 @@ body.preloader-site {
   display: block;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #6A4C93;
+  color: #7A5C2E;
   margin-bottom: 6px;
 }
 
@@ -850,9 +890,9 @@ body.preloader-site {
 }
 
 .button-komen {
- border: 2px solid #6A4C93;
+ border: 2px solid #7A5C2E;
   background: white;
-  color: #6A4C93;
+  color: #7A5C2E;
   height: 50px;
   width: 250px;
   font-size: 1rem;
@@ -888,7 +928,7 @@ body.preloader-site {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   font-size: 2.2rem;
   font-weight: 700;
-  color: #6A4C93;
+  color: #7A5C2E;
   text-align: center;
 }
 
@@ -953,12 +993,12 @@ body.preloader-site {
   font-size: 1.6rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #6b4e71; /* ungu lembut */
+  color: ; /* ungu lembut */
   margin-bottom: 60px;
 }
 
 /* Kotak ayat */
-.ayat-box {
+/*.ayat-box {
   max-width: 900px;
   margin: 0 auto 50px auto;
   padding: 40px 30px;
@@ -966,7 +1006,7 @@ body.preloader-site {
   border-radius: 18px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
   border-left: 6px solid #6b4e71;
-}
+}*/
 
 /* Ayat Arab */
 .ayat-arab {
@@ -975,6 +1015,8 @@ body.preloader-site {
   color: #2e2e2e;
   font-family: 'Lato', sans-serif;
   margin-bottom: 25px;
+  backdrop-filter: blur(10px); /* efek kaca */
+  webkit-backdrop-filter: blur(10px);
 }
 
 /* Arti ayat */
@@ -984,14 +1026,21 @@ body.preloader-site {
   line-height: 1.8;
   font-style: italic;
   margin-bottom: 15px;
+  backdrop-filter: blur(10px); /* efek kaca */
+  webkit-backdrop-filter: blur(10px);
 }
 
 /* Sumber ayat */
 .ayat-sumber {
   font-size: 0.9rem;
-  color: #6b4e71;
+  color: #7A5C2E;
   font-weight: 600;
   letter-spacing: 1px;
+  backdrop-filter: blur(10px); /* efek kaca */
+  webkit-backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: inline-block;
 }
 
 /* ======================
