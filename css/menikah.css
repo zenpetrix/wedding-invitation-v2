@@ -38,12 +38,27 @@ html {
 
 
 .hero {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100dvh;
   background: url("../image/2.jpeg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .hero,
+  .section-dark,
+  .section-lokasi,
+  .section-nama,
+  .section-ucapan,
+  .section-thanks,
+  .section-ayat {
+    background-attachment: scroll !important;
+  }
 }
 
 @media (max-width: 768px) {
