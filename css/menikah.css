@@ -15,6 +15,10 @@ html {
   min-height: 100%;
 }
 
+html, body {
+  height: -webkit-fill-available;
+}
+
 .header-wrapper {
   padding-bottom: px;
 }
@@ -22,10 +26,8 @@ html {
 .navbar-item {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
   letter-spacing: 1px;
   font-size: 1rem;
-  box-shadow:  ;
 }
 
 .navbar-item.is-active{
@@ -38,6 +40,7 @@ html {
 
 
 .hero {
+  background-position: center;
   min-height: 100vh;
   min-height: -webkit-fill-available;
   min-height: 100dvh;
@@ -49,6 +52,7 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+
 @supports (-webkit-touch-callout: none) {
   .hero,
   .section-dark,
@@ -58,6 +62,8 @@ html {
   .section-thanks,
   .section-ayat {
     background-attachment: scroll !important;
+    background-position: center !important;
+    background-size: cover !important;
   }
 }
 
