@@ -48,7 +48,9 @@ html {
 
 @media (max-width: 768px) {
   .section {
-    min-height: 100vh;
+    min-height: 100vh;              /* default */
+    min-height: -webkit-fill-available; /* Safari lama */
+    min-height: 100dvh;             /* Safari baru */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -259,7 +261,10 @@ html {
   margin-top: 50px;
   font-weight: bolder;
   backdrop-filter: blur(10px); /* efek kaca */
-  webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px 10px; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  display:inline-block;
 }
 
 .main-content .section-ucapan {
@@ -374,6 +379,12 @@ html {
   letter-spacing: 0px;
   padding-bottom: 6px;
   line-height: 3.7rem;
+  background-color: ; /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 10px 10px; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  display: inline-block;
 }
 
 .ampersand {
@@ -381,8 +392,15 @@ font-size: 5rem;
 font-family: 'Cherry Blossom Script', cursive;
 color: #333;
 line-height: 5rem;
+margin-top: 20px;
+margin-bottom: 20px;
 display: inline-block;
 vertical-align: middle;
+background-color: ; /* semi-transparan */
+backdrop-filter: blur(10px); /* efek kaca */
+webkit-backdrop-filter: blur(10px); /* untuk Safari */
+padding: 10px 10px; /* atur ruang dalam */
+border-radius: 1rem; /* sudut membulat */
 }
 
 .anakdari {
@@ -390,12 +408,25 @@ vertical-align: middle;
  font-family: 'Raleway', sans-serif;
  letter-spacing: 0px;
  font-size: large; 
+ background-color: ; /* semi-transparan */
+ backdrop-filter: blur(10px); /* efek kaca */
+ webkit-backdrop-filter: blur(10px); /* untuk Safari */
+ padding: 10px 10px; /* atur ruang dalam */
+ border-radius: 1rem; /* sudut membulat */
+ display: inline-block;
 }
 
 .anakdari1 {
  text-align: center ;
  font-family: 'Raleway', sans-serif;
  letter-spacing: 0px; 
+ font-size: large;
+ background-color: ; /* semi-transparan */
+ backdrop-filter: blur(10px); /* efek kaca */
+ webkit-backdrop-filter: blur(10px); /* untuk Safari */
+ padding: 10px 10px; /* atur ruang dalam */
+ border-radius: 1rem; /* sudut membulat */
+ display: inline-block;
 }
 .bodytext {
   font-size: 18px;
@@ -407,6 +438,12 @@ vertical-align: middle;
   font-family: 'Cherry Blossom Script', cursive;
   font-weight: 900;
   color: #000;
+  background-color: ; /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 1rem 2rem; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  margin : 0 auto;
 }
 
 .tanggal-angka {
@@ -419,7 +456,7 @@ vertical-align: middle;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   line-height: 1;
-  display: inline-block; /* supaya ukurannya sesuai konten */
+  margin: 0 auto; /* supaya ukurannya sesuai konten */
 }
 
 /* .waktu-akad {
@@ -457,6 +494,12 @@ vertical-align: middle;
   font-family: 'Cherry Blossom Script', cursive;
   font-weight: 900;
   color: #000;
+  background-color: ; /* semi-transparan */
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 1rem 2rem; /* atur ruang dalam */
+  border-radius: 1rem; /* sudut membulat */
+  margin : 0 auto;
   
 }
 
@@ -471,7 +514,8 @@ vertical-align: middle;
   -webkit-backdrop-filter: blur(10px); /* untuk Safari */
   padding: 1rem 2rem; /* atur ruang dalam */
   border-radius: 1rem; /* sudut membulat */
-  display: inline-block;
+  margin : 0 auto;
+  
 }
 
 
