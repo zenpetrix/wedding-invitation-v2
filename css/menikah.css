@@ -1175,7 +1175,7 @@ body.preloader-site {
 
 .musik-btn {
   position: fixed;       /* biar nempel di layar */
-  top: 20px;             /* jarak dari atas */
+  top: 70px;             /* jarak dari atas */
   right: 20px;           /* jarak dari kanan */
   width: 50px;
   height: 50px;
