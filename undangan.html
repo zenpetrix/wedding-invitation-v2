@@ -42,10 +42,10 @@
   </head>
 
   <body>
-    <audio id="lagu" autoplay loop>
+    <audio id="lagu"  loop >
   <source src="audio/musik.mp3" type="audio/mpeg">
 </audio>
-<button id="btnMusik" class="musik-btn">⏸</button>
+<button id="btnMusik" class="musik-btn">▶</button>
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
       <!-- Begin Hero -->
@@ -447,20 +447,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<script>
-const audio = document.getElementById("lagu");
-const btn = document.getElementById("btnMusik");
+ <script>
+    const audio = document.getElementById("lagu");
+    const btn = document.getElementById("btnMusik");
 
-btn.addEventListener("click", () => {
-  if (audio.paused) {
-    audio.play();
-    btn.textContent = "⏸"; // ikon pause
-  } else {
-    audio.pause();
-    btn.textContent = "▶"; // ikon play
-  }
-});
-</script>
+    // Musik langsung play karena klik "Open Invitation" dianggap interaksi valid
+    window.addEventListener("load", () => {
+      audio.play();
+      btn.textContent = "⏸";
+    });
+
+    // Toggle tombol musik
+    btn.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = "⏸";
+      } else {
+        audio.pause();
+        btn.textContent = "▶";
+      }
+    });
+  </script>
 
   </body>
 </html>
