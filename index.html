@@ -132,6 +132,21 @@
       btn.href = "undangan.html";
     }
   </script>
+
+  <script>
+  const btn = document.getElementById("btnUndangan");
+  btn.addEventListener("click", (e) => {
+    e.preventDefault(); // cegah pindah langsung
+    const audio = new Audio("audio/lagu.mp3");
+    audio.play().then(() => {
+      // setelah musik mulai, baru pindah halaman
+      window.location.href = "undangan.html";
+    }).catch(err => {
+      console.log("Safari blok autoplay:", err);
+      window.location.href = "undangan.html";
+    });
+  });
+</script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/prelo.js"></script>
 
