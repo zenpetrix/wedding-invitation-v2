@@ -1173,4 +1173,24 @@ body.preloader-site {
   font-family: 'Quicksand', sans-serif;
 }
 
+.musik-btn {
+  position: fixed;       /* biar nempel di layar */
+  top: 20px;             /* jarak dari atas */
+  right: 20px;           /* jarak dari kanan */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;    /* bulat */
+  border: none;
+  background: rgba(255,255,255,0.8);
+  color: #7A5C2E;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  z-index: 999;          /* biar di atas elemen lain */
+}
+.musik-btn:hover {
+  background: #7A5C2E;
+  color: white;
+}
 

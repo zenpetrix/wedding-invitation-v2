@@ -42,6 +42,10 @@
   </head>
 
   <body>
+    <audio id="lagu" autoplay loop>
+  <source src="audio/musik.mp3" type="audio/mpeg">
+</audio>
+<button id="btnMusik" class="musik-btn">⏸</button>
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
       <!-- Begin Hero -->
@@ -316,7 +320,7 @@ class="button has-tooltip btn-cta">
               <br>
               <span class= "tempat1">Jalan Bunga Mawar No.108,
               Beringin, <br>Medan Selayang,
-              Padang Bulan Selayang II, <br> Kota Medan.
+              PB Selayang II, <br> Kota Medan.
               <br></span>
             </p>
             <br><br><br>
@@ -439,6 +443,21 @@ document.addEventListener("DOMContentLoaded", function () {
     targetNama.innerText = namaTamu.replace(/\+/g, " ");
   } else {
     targetNama.innerText = "Tamu Undangan";
+  }
+});
+</script>
+
+<script>
+const audio = document.getElementById("lagu");
+const btn = document.getElementById("btnMusik");
+
+btn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = "⏸"; // ikon pause
+  } else {
+    audio.pause();
+    btn.textContent = "▶"; // ikon play
   }
 });
 </script>
