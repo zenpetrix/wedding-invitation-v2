@@ -448,13 +448,16 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
  <script>
-    const audio = document.getElementById("lagu");
+   const audio = document.getElementById("lagu");
     const btn = document.getElementById("btnMusik");
 
-    // Musik langsung play karena klik "Open Invitation" dianggap interaksi valid
+    // Musik langsung play karena klik "Open Invitation" di index.html dianggap interaksi valid
     window.addEventListener("load", () => {
-      audio.play();
-      btn.textContent = "⏸";
+      audio.play().then(() => {
+        btn.textContent = "⏸";
+      }).catch(err => {
+        console.log("Safari blok autoplay:", err);
+      });
     });
 
     // Toggle tombol musik
