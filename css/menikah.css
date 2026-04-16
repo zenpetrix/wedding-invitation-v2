@@ -399,7 +399,7 @@ html, body {
 .nama-lengkap {
   font-family: 'Great-Vibes', cursive;
   color: #333;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bolder;
   letter-spacing: 0px;
   padding-bottom: 6px;
@@ -527,7 +527,7 @@ border-radius: 1rem; /* sudut membulat */
 }
 
 .tempat {
-  font-size:20px;
+  font-size:17px;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   color: #000;
