@@ -1188,7 +1188,10 @@ body.preloader-site {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: 0.3s;
   z-index: 999;          /* biar di atas elemen lain */
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
+
 .musik-btn:hover {
   background: #7A5C2E;
   color: white;
